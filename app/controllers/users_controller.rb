@@ -6,5 +6,6 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.fint(params[:id])
   end
 end
