@@ -4,6 +4,9 @@ class PostImage < ApplicationRecord
   has_many :post_comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
   belongs_to :user
+  
+  varidates :shop_name, presence: true
+  varidates :image, presence: true
 
 
   def get_image
