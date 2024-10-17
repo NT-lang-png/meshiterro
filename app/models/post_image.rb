@@ -5,8 +5,8 @@ class PostImage < ApplicationRecord
   has_many :favorites, dependent: :destroy
   belongs_to :user
   
-  varidates :shop_name, presence: true
-  varidates :image, presence: true
+  validates :shop_name, presence: true
+  validates :image, presence: true
 
 
   def get_image
